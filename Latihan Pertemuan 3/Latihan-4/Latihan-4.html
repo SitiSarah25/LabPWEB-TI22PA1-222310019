@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan-4</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: lightpink;
+        }
+
+        .container {
+            width: 30%;
+            padding: 20px;
+            border: 1px solid lightgray;
+            margin: 0 auto;
+            background-color: white;
+            margin-top: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        label {
+            width: 100px;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+
+        input[type="number"],
+        select,
+        textarea {
+            width: 250px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: rgb(255, 0, 85);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: lightpink;
+            color: black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Menghitung Saldo Akhir Tabungan</h2>
+        <form id="fform">
+            <label for="saldo">Saldo Awal:</label>
+            <input type="number" name="saldo" id="saldo" required><br>
+            
+            <label for="bunga">Bunga (%):</label>
+            <input type="number" name="bunga" id="bunga" required><br>
+            
+            <label for="waktu">Waktu (Bulan):</label>
+            <input type="number" name="waktu" id="waktu" required><br>
+        
+            <button type="button" id="hitung-btn">Hitung</button><br>
+        </form>
+        <div id="output-container"></div>
+    </div>
+    <script src="Latihan-4.js"></script>
+</body>
+
+</html>
